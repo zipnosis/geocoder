@@ -226,7 +226,7 @@ module Geocoder::Store
       # Value which can be passed to where() to produce no results.
       #
       def false_condition
-        using_sqlite? ? 0 : "false"
+        using_sqlite? ? 0 : "1=2"
       end
 
       ##
